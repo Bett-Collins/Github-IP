@@ -16,14 +16,7 @@ export class ProfileService {
   }
   getUserProfile(searchItem: string | number) {
     interface apiResults {
-      // login: string,
-      // avatar_url: string,
-      // bio: string,
-      // html_url:string,
-      // followers: number,
-      // following: number,
-      // public_repos: number
-
+    
        bio:string,
       public_repos:number,
        login:string,
@@ -61,10 +54,7 @@ export class ProfileService {
     let promise = new Promise((resolve, reject) => {
       this.http.get<apiResponse>(url).toPromise().then(response => {
       this.repository=response!
-        // this.repo.login=response!.login
-        // this.repo.html_url = response!.html_url
-        // this.repo.description = response!.description
-        // this.repo.language = response!.language
+     
         console.log(this.repository)
         resolve(null)
       }, error => {
