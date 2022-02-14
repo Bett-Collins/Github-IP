@@ -13,10 +13,19 @@ export class ProfileComponent implements OnInit {
   repository!: any;
   constructor(private profileRequest: ProfileService) {
     this.profile = new Profile("", 0, "", "", );
-   
+    this.repository = new Repository("", "", "", "");
  
   }
-  
+  search(searchItem:any) {
+    this.profileRequest.getUserProfile(searchItem).then((success)=>{
+      this.profile = this.profileRequest.profile
+      console.log(this.profile)
+       })
+this.profileRequest.displayRepos(searchItem).then((success)=>{
+  this.repository=this.profileRequest.repository
+  console.log(this.repository)
+})
+ }
   
   ngOnInit(): void {
     this.search('Bett-Collins')
