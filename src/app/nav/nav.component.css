@@ -2,11 +2,12 @@
     overflow: hidden;
     background-color: #333;
   }
-  .navbar a {
+  .navbar li {
     float: left;
     font-size: 16px;
-    color: white;
+ color: whitesmoke;
+    list-style: none;
   
-    padding: 3px 3px;
+    padding: 10px 10px;
     text-decoration: none;
   }

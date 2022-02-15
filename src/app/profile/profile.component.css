@@ -1,12 +1,21 @@
 .repo{
     float: right;
 }
-.name {
+/* .name {
     color: gray;
-}
-.profile{
+} */
+/* .profile{
     display: flex;
-}
+} */
 #details{
     border: solid;
+    margin: 10px;
+    width: 550px;
+}
+.footer-card{
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    height: 60px;
+    padding-top: 10px;
 }
