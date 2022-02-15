@@ -4,3 +4,9 @@
 .name {
     color: gray;
 }
+.profile{
+    display: flex;
+}
+#details{
+    border: solid;
+}
