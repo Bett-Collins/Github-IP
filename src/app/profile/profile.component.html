@@ -1,12 +1,10 @@
+<app-search-form (searchProf)="search($event)"></app-search-form>
 <div class="container">
  <div class="row">
 
-      <div class="col-sm-12">
-
-        <app-search-form (searchProf)="search($event)"></app-search-form>
-
-        <div *ngIf="profile">
-          <img src="{{profile. avatar_url}}">
+      <div class="col-sm-6">
+       <div *ngIf="profile">
+          <img src="{{profile.avatar_url}}">
           <p>{{profile.login}}</p>
           <p>{{profile.bio}}</p>
           <p>{{profile.public_repos}}</p>
@@ -15,12 +13,12 @@
         </div>
       </div>
       <div class="repo">
-        <div class="row">
-        <div class="col-sm-12">
+      
+        <div class="col-sm-6">
           
 
             <div id="details" *ngFor="let repo of repository">
-              <div class="name" style="color: blue;">
+              <div class="name" style="color: rgb(15, 15, 117);">
                 <p>{{repo.name}}</p>
               </div>
             <p>{{repo.description}}</p>
@@ -32,7 +30,7 @@
 
       </div>
     </div>
-  </div>
+
 
 <div class="footer-card">
   <h3>Designed by Collins</h3>
