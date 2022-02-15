@@ -1,4 +1,8 @@
 
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 #details{
     border: solid;
     margin: 10px;
